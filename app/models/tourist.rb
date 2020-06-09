@@ -39,7 +39,7 @@ class Tourist
   def never_visited
     Landmark.all.select do |landmark|
       !self.landmarks.include?(landmark)
-      binding.pry
+      # binding.pry
     end
   #   trips_not_visited  = Trip.all.select do |trip|
   #     trip.tourist != self
